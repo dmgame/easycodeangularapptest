@@ -21,9 +21,4 @@ export class ResetPasswordModalComponent implements OnInit {
   closeModal() {
     this.modalCloseEvent.emit();
   }
-
-  onSubmit() {
-    // вызвать метод сброса пароля из сервиса auth
-    // вызывать метод closeModal
-  }
 }
