@@ -1,0 +1,14 @@
+<nav *ngIf="user">
+  <ul class="tab-controls">
+    <li *ngFor="let item of tabList">
+      <a
+        href=""
+        [routerLink]="['/users', user._id]"
+        [queryParams]="{ tab: item.tab }"
+        [ngClass]="{ active: (activeTab | async) === item.tab }"
+      >
+        {{ item.text }}
+      </a>
+    </li>
+  </ul>
+</nav>

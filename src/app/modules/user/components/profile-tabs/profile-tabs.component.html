@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="activeTab | async">
+  <ng-container *ngSwitchCase="'selfies'">
+    <app-profile-selfies></app-profile-selfies>
+  </ng-container>
+  <ng-container *ngSwitchCase="'favourites'">
+    <app-profile-favourites></app-profile-favourites>
+  </ng-container>
+</ng-container>

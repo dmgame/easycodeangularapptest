@@ -1,0 +1,25 @@
+<app-profile-cover
+  [cover]="user?.cover"
+  [isCurrentUser]="authUserId === id"
+  (upload)="uploadCover($event)"
+></app-profile-cover>
+<app-profile-controls [user]="user"></app-profile-controls>
+<app-profile-tabs></app-profile-tabs>
+<!--
+ <app-profile-controls
+  [user]="user"
+ ></app-profile-controls>
+
+ <app-profile-tabs-container
+  [activeTab]="activeTab"
+ >
+  switch(activeTab)
+    case 'selfies'
+      <app-profile-selfies>
+        // запрос на получение всех картинока пользователя
+        ngFor image of images
+          <app-picture-preview [img]="image"></app-picture-preview>
+      </app-profile-selfies>
+
+ </app-profile-tabs-container>
+ -->
